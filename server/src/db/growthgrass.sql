@@ -1,6 +1,7 @@
 CREATE TABLE `users` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
   `user_name` varchar(255),
+  `android_id` varchar(255),
   `kakao_id` varchar(255)
 );
 
