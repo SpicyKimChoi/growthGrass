@@ -8,6 +8,7 @@ from controllers.user_controller import User
 def create_app(test_config = None):		
     app = Flask(__name__)
     api = Api(app)
+    app.config['ERROR_404_HELP'] = False
 
     if test_config is None:	
         app.config.from_pyfile("./db/config.py")
